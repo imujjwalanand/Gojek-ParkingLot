@@ -32,7 +32,11 @@ namespace parking_lot.Providers {
                         break;
                     }
                 case Commands.LEAVE_COMMAND: {
-                        Leave(Int32.Parse(inputs[1]));
+                        try {
+                            Leave(Int32.Parse(inputs[1]));
+                        } catch(System.Exception e) {
+                            throw new ParkingException("Please provide valid input for slot number");
+                        }
                         break;
                     }
                 case Commands.REG_FOR_COLOUR_COMMAND: {
