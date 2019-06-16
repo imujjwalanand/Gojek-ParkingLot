@@ -37,6 +37,9 @@ namespace parking_lot {
             Console.WriteLine("2) To Park a car in the nearest slot ----> park {carRegistrationNumber} {carColour}");
             Console.WriteLine("3) To Remove a car from a given slot ----> leave {slotNumber}");
             Console.WriteLine("4) To Get Parking lot status ----> status");
+            Console.WriteLine("5) To Get Registration Numbers for cars with Colour ----> registration_numbers_for_cars_with_colour {colour}");
+            Console.WriteLine("5) To Get Slot Numbers for cars with Colour ----> slot_numbers_for_cars_with_colour {colour}");
+            Console.WriteLine("5) To Get Slot Number for cars with Registration Number ----> slot_number_for_registration_number {RegistrationNumber}");
             Console.WriteLine("\nEnter 'exit' to EXIT");
         }
 
