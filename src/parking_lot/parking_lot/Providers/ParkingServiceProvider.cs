@@ -142,7 +142,7 @@ namespace parking_lot.Providers {
                 }
             }
             if(cars.Count == 0) {
-                throw new NotFoundException("No Cars present for given Colour. ");
+                throw new NotFoundException();
             }
             output.Print(HelperMethods.CommaSeparatedList(cars));
             return;
@@ -157,7 +157,7 @@ namespace parking_lot.Providers {
                     return;
                 }
             }
-            throw new NotFoundException("No Cars present for given Registration Number. ");
+            throw new NotFoundException();
         }
 
         public void GetSlotNumsForColour(string colour) {
@@ -170,7 +170,7 @@ namespace parking_lot.Providers {
                 }
             }
             if(cars.Count == 0) {
-                throw new NotFoundException("No cars found with given colour. ");
+                throw new NotFoundException();
             }
 
             List<string> slots = new List<string>();
@@ -181,7 +181,7 @@ namespace parking_lot.Providers {
             }
 
             if(slots.Count == 0) {
-                throw new NotFoundException("No cars found with given colour. ");
+                throw new NotFoundException();
             }
             output.Print(HelperMethods.CommaSeparatedList(slots));
             return;
