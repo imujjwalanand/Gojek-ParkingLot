@@ -1,4 +1,5 @@
 ﻿using parking_lot.Constants;
+using parking_lot.Exception;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,24 +28,23 @@ namespace parking_lot.Providers {
                     switch(input.Length) {
                         case 1:
                             if(paramCount != 0)
-                                valid = false; //Only Status has input.len = 1 & paramCount 0
+                                throw new InvalidCommandException(); //Only Status has input.len = 1 & paramCount 0
                             break;
                         case 2:
                             if(paramCount != 1)
-                                valid = false; //CreateParkingLot has 1 Params
+                                throw new InvalidCommandException(); //CreateParkingLot has 1 Params
                             break;
                         case 3:
                             if(paramCount != 2)
-                                valid = false; //park has 3 params
+                                throw new InvalidCommandException(); //park has 3 params
                             break;
                         default:
-                            valid = false;
-                            break;
+                            throw new InvalidCommandException();
                     }
                 }
 
-            } catch(System.Exception e) {
-                valid = false;
+            } catch(ParkingException e) {
+                throw new InvalidCommandException();
             }
             return valid;
 

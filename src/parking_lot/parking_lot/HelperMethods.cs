@@ -32,12 +32,23 @@ namespace parking_lot {
         }
 
         public static void PrintCommands() {
-            Console.WriteLine("Please enter any of the below commands and enter 'exit' to EXIT");
+            Console.WriteLine("\n\nPlease enter any of the below commands and enter 'exit' to EXIT");
             Console.WriteLine("1) To create a Parking Lot of size n ----> create_parking_lot {lotSize}");
             Console.WriteLine("2) To Park a car in the nearest slot ----> park {carRegistrationNumber} {carColour}");
             Console.WriteLine("3) To Remove a car from a given slot ----> leave {slotNumber}");
             Console.WriteLine("4) To Get Parking lot status ----> status");
             Console.WriteLine("\nEnter 'exit' to EXIT");
+        }
+
+        public static string CommaSeparatedList(List<string> list) {
+            string ans = "";
+            for(int i = 0; i < list.Count; i++) {
+                ans += list[i];
+                if(i != list.Count - 1) {
+                    ans += ", ";
+                }
+            }
+            return ans;
         }
     }
 }

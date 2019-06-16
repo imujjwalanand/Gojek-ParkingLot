@@ -20,6 +20,11 @@ namespace parking_lot.Providers {
             Console.WriteLine("Sorry, parking lot is full");
         }
 
+        //Generic Print Message for dynamic I/O
+        public void Print(string s) {
+            Console.WriteLine(s);
+        }
+
 
     }
 }

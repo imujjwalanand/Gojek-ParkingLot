@@ -20,9 +20,9 @@ namespace parking_lot {
 
             } else {
                 //Input Interactively
+                HelperMethods.PrintCommands();
                 while(true) {
                     try {
-                        HelperMethods.PrintCommands();
                         var input = Console.ReadLine();
                         if(input.ToLower().Equals("exit")) {
                             break;
