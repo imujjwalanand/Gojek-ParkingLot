@@ -69,9 +69,7 @@ namespace parking_lot.Providers {
         }
 
         public void Park(Vehicle vehicle) {
-            if(_lotSize == -1) {
-                throw new ParkingException("You must need to create the parking lot first");
-            }
+            validParkingLotExists();
             string reg = vehicle.RegistrationNumber;
             string colour = vehicle.Colour;
             for(int i = 1; i <= _lotSize; i++) {
@@ -88,6 +86,7 @@ namespace parking_lot.Providers {
         }
 
         public void Leave(int slot) {
+            validParkingLotExists();
             if(slot > _lotSize || slot < 1) {
                 throw new InvalidCommandException("The given slot doesn't exist. ");
             }
@@ -98,11 +97,12 @@ namespace parking_lot.Providers {
                 output.UnPark(slot);
                 return;
             } else {
-                throw new ParkingException("No car is parked in the mentioned slot");
+                throw new ParkingException("No car is parked in the mentioned slot. ");
             }
         }
 
         public void GetStatus() {
+            validParkingLotExists();
             //Finding the greatest string length and beautifying the outout in a table format
             int slotLength = ParkingLotStrings.SlotNumberText.Length, regNoLength = ParkingLotStrings.RegistrationNumberText.Length;
             foreach(var slot in _slotToRegMap.Keys) {
@@ -129,6 +129,7 @@ namespace parking_lot.Providers {
 
 
         public void GetRegistrationNumsForColour(string colour) {
+            validParkingLotExists();
             colour = colour.ToLower();
             List<string> cars = new List<string>();
             foreach(var reg in _regToColourMap.Keys) {
@@ -137,31 +138,35 @@ namespace parking_lot.Providers {
                 }
             }
             if(cars.Count == 0) {
-                throw new NotFoundException("No Cars present for given Colour");
+                throw new NotFoundException("No Cars present for given Colour. ");
             }
             output.Print(HelperMethods.CommaSeparatedList(cars));
             return;
         }
 
         public void GetslotNumForRegistrationNum(string regNum) {
+            validParkingLotExists();
+            regNum = regNum.ToLower();
             foreach(var slot in _slotToRegMap.Keys) {
-                if(_slotToRegMap[slot].Equals(regNum)) {
+                if(_slotToRegMap[slot].ToLower().Equals(regNum)) {
                     output.Print(slot.ToString());
                     return;
                 }
             }
-            throw new NotFoundException("No Cars present for given Registration Number");
+            throw new NotFoundException("No Cars present for given Registration Number. ");
         }
 
         public void GetSlotNumsForColour(string colour) {
+            validParkingLotExists();
+            colour = colour.ToLower();
             List<string> cars = new List<string>();
             foreach(var reg in _regToColourMap.Keys) {
-                if(_regToColourMap[reg].Equals(colour)) {
+                if(_regToColourMap[reg].ToLower().Equals(colour)) {
                     cars.Add(reg);
                 }
             }
             if(cars.Count == 0) {
-                throw new NotFoundException("No cars found with given colour");
+                throw new NotFoundException("No cars found with given colour. ");
             }
 
             List<string> slots = new List<string>();
@@ -172,7 +177,7 @@ namespace parking_lot.Providers {
             }
 
             if(slots.Count == 0) {
-                throw new NotFoundException("No cars found with given colour");
+                throw new NotFoundException("No cars found with given colour. ");
             }
             output.Print(HelperMethods.CommaSeparatedList(slots));
             return;
@@ -180,6 +185,13 @@ namespace parking_lot.Providers {
 
         public bool Validate(string command) {
             return validator.Validate(command);
+        }
+
+        private bool validParkingLotExists() {
+            if(_lotSize == -1) {
+                throw new ParkingException("You must need to create the parking lot first");
+            }
+            return true;
         }
     }
 }
