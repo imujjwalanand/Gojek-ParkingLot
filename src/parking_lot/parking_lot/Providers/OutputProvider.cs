@@ -16,10 +16,6 @@ namespace parking_lot.Providers {
             Console.WriteLine("Slot number {0} is free", slot);
         }
 
-        public void SlotsFull() {
-            Console.WriteLine("Sorry, parking lot is full");
-        }
-
         //Generic Print Message for dynamic I/O
         public void Print(string s) {
             Console.WriteLine(s);

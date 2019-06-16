@@ -8,3 +8,4 @@ C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot\bin\Debug\netc
 C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot\bin\Debug\netcoreapp2.1\parking_lot.pdb
 C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot\obj\Debug\netcoreapp2.1\parking_lot.dll
 C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot\obj\Debug\netcoreapp2.1\parking_lot.pdb
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot\obj\Debug\netcoreapp2.1\parking_lot.csprojAssemblyReference.cache
