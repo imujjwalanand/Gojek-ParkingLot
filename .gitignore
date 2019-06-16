@@ -3,4 +3,7 @@
 ################################################################################
 
 /src/parking_lot/.vs/parking_lot
-/src/parking_lot/parking_lot/bin
+/src/parking_lot/parking_lot/bin/
+/src/parking_lot/parking_lot/obj/
+src/parking_lot/parking_lot.Tests/bin/
+src/parking_lot/parking_lot.Tests/obj/
