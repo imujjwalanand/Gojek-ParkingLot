@@ -5,6 +5,7 @@ using System.Text;
 
 namespace parking_lot.Interfaces {
     public interface IParkingService {
+        void Execute(string inputSring);
         void CreateParkingLot(int lotSize);
         void Park(Vehicle vehicle);
         void Leave(int slot);
@@ -12,6 +13,7 @@ namespace parking_lot.Interfaces {
         void GetRegistrationNumsForColour(string colour);
         void GetSlotNumsForColour(string colour);
         void GetslotNumForRegistrationNum(string regNum);
+        bool Validate(string command);
 
     }
 }

@@ -18,5 +18,26 @@ namespace parking_lot {
             }
             return first + s;
         }
+
+        public static void PrintWelcomeMessage() {
+            Console.WriteLine("\n\n");
+            Console.WriteLine("----------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------\n");
+            Console.WriteLine("-------------  Welcome to GOJEK Parking Lot  -------------\n");
+            Console.WriteLine("----------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------");
+            Console.WriteLine("\n\n");
+        }
+
+        public static void PrintCommands() {
+            Console.WriteLine("Please enter any of the below commands and enter 'exit' to EXIT");
+            Console.WriteLine("1) To create a Parking Lot of size n ----> create_parking_lot {lotSize}");
+            Console.WriteLine("2) To Park a car in the nearest slot ----> park {carRegistrationNumber} {carColour}");
+            Console.WriteLine("3) To Remove a car from a given slot ----> leave {slotNumber}");
+            Console.WriteLine("4) To Get Parking lot status ----> status");
+            Console.WriteLine("\nEnter 'exit' to EXIT");
+        }
     }
 }
