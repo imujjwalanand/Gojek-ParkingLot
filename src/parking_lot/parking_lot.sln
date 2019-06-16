@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parking_lot", "parking_lot\parking_lot.csproj", "{74BC9865-E328-435C-9798-DD60D50B8031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "parking_lot", "parking_lot\parking_lot.csproj", "{74BC9865-E328-435C-9798-DD60D50B8031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parking_lot.Tests", "parking_lot.Tests\parking_lot.Tests.csproj", "{65778257-6D46-4755-AB59-C88716929F34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{74BC9865-E328-435C-9798-DD60D50B8031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74BC9865-E328-435C-9798-DD60D50B8031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74BC9865-E328-435C-9798-DD60D50B8031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65778257-6D46-4755-AB59-C88716929F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65778257-6D46-4755-AB59-C88716929F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65778257-6D46-4755-AB59-C88716929F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65778257-6D46-4755-AB59-C88716929F34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

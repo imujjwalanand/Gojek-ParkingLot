@@ -1,0 +1,17 @@
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\parking_lot.Tests.deps.json
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\parking_lot.Tests.runtimeconfig.json
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\parking_lot.Tests.runtimeconfig.dev.json
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\parking_lot.Tests.dll
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\parking_lot.Tests.pdb
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\obj\Debug\netcoreapp2.1\parking_lot.Tests.csprojAssemblyReference.cache
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\obj\Debug\netcoreapp2.1\parking_lot.Tests.csproj.CoreCompileInputs.cache
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\obj\Debug\netcoreapp2.1\parking_lot.Tests.AssemblyInfoInputs.cache
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\obj\Debug\netcoreapp2.1\parking_lot.Tests.AssemblyInfo.cs
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\obj\Debug\netcoreapp2.1\parking_lot.Tests.dll
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\obj\Debug\netcoreapp2.1\parking_lot.Tests.pdb
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\parking_lot.dll
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\bin\Debug\netcoreapp2.1\parking_lot.pdb
+C:\Users\uanand\Documents\parking_lot\src\parking_lot\parking_lot.Tests\obj\Debug\netcoreapp2.1\parking_lot.Tests.csproj.CopyComplete
