@@ -1,4 +1,4 @@
-# Readme.Md (Welcome to Gojek's Parking Lot Problem)
+# Welcome to Gojek's Parking Lot Problem
 I've implemented the Parking Lot problem to the best of my abilities in C# Language as a .NET Core 2.2 Console Application
 
 ## Project Requirements
